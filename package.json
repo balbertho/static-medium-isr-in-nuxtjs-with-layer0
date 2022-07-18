@@ -1,0 +1,33 @@
+{
+  "name": "nuxt-isg",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "0:dev": "node generate_BUILD_ID.js && layer0 dev",
+    "0:build": "node generate_BUILD_ID.js && layer0 build",
+    "0:deploy": "node generate_BUILD_ID.js && layer0 deploy",
+    "0:prod": "layer0 run --production",
+    "format": "prettier --write '**/*' --ignore-unknown"
+  },
+  "dependencies": {
+    "@nuxt/core": "^2.15.3",
+    "express": "^4.17.1",
+    "rss-to-json": "^2.0.2"
+  },
+  "devDependencies": {
+    "@layer0/cli": "latest",
+    "@layer0/core": "latest",
+    "@layer0/devtools": "latest",
+    "@layer0/nuxt": "latest",
+    "@layer0/prefetch": "latest",
+    "@layer0/vue": "latest",
+    "@nuxtjs/tailwindcss": "^4.0.1",
+    "core-js": "^3.9.1",
+    "fs-cheerio": "^3.0.0",
+    "nuxt": "^2.15.3",
+    "postcss": "^8.2.8",
+    "prettier": "latest"
+  }
+}
